@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F7F7FF;
+  color: #2E3A59;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #2E3A59;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #F25F5C;
+}
+
+main {
+  padding: 30px;
+  flex: 1;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-page {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1200px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 230px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transform: scale(0.9);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #2E3A59;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #2E3A59;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #F25F5C;
+  transform: scale(1.05);
+}
+
+footer {
+  background: #2E3A59;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+@keyframes fadeIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+h1:hover {
+  background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

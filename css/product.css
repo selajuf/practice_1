@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #F7F7FF;
+  color: #2E3A59;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #2E3A59;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #F25F5C;
+}
+
+.product-page {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.product-page img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  animation: zoomIn 1s ease;
+}
+
+.product-info {
+  max-width: 500px;
+  animation: slideIn 1s ease;
+}
+
+.product-info h1 {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #F25F5C;
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #2E3A59;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.logo {
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+footer {
+  background: #2E3A59;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+
+main {
+  padding: 30px;
+  flex: 1;
+}

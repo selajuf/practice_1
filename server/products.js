@@ -1,7 +1,7 @@
-import { products } from "./mockDB.js"
+import { getProducts, saveProducts } from "./mockDB.js"
 
 export function loadProducts() {
-    return products;
+    return getProducts();
 }
 
 export function renderProductCard(product) {
@@ -25,4 +25,9 @@ export function renderProductList(container) {
             window.location.href = `products.html?id=${productId}`;
         });
     });
+}
+
+export function getProductById(id) {
+    const products = loadProducts();
+    return products.find(p => p.id == id);
 }

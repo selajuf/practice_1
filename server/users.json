@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "login": "admin@mail.com",
+    "password": "123456",
+    "name": "Админ",
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "login": "user",
+    "password": "password",
+    "name": "Пользователь",
+    "role": "user"
+  },
+  {
+    "id": 3,
+    "login": "user@mail.ru",
+    "password": "user@mail.ru",
+    "name": "user@mail.ru",
+    "role": "user"
+  },
+  {
+    "id": 4,
+    "login": "123@mail.ru",
+    "password": "123@mail.ru",
+    "name": "123@mail.ru",
+    "role": "admin"
+  }
+]
